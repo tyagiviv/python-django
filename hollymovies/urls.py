@@ -1,3 +1,4 @@
+
 """hollymovies URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from viewer.views import hello, hello2
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hello/<s>', hello),
+    path('hello2/<s0>', hello2)
+
+
+
 ]
+
